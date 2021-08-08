@@ -13,12 +13,14 @@ import {MatTableModule} from "@angular/material/table";
 import {HttpClientModule} from "@angular/common/http";
 import {MatSortModule} from "@angular/material/sort";
 import {MatPaginatorModule} from "@angular/material/paginator";
+import { BargraphComponent } from './bargraph/bargraph.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsernameComponent,
-    GithubtableComponent
+    GithubtableComponent,
+    BargraphComponent
   ],
   imports: [
     BrowserModule,
