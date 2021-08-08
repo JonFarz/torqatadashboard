@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GithubService} from "../github.service";
 
 @Component({
   selector: 'app-username',
@@ -8,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class UsernameComponent implements OnInit {
   githubUserName = null;
 
-  constructor() { }
+  constructor(private gitHubService: GithubService) { }
 
   ngOnInit(): void {
   }
 
   submit(){
-    console.log(this.githubUserName);
+    this.gitHubService.getRepoInformationForUser(this.githubUserName);
   }
 
 }
