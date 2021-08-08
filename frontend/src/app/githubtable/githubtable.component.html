@@ -19,4 +19,8 @@
                  showFirstLastButtons
                  aria-label="Select page of periodic elements">
   </mat-paginator>
+  <mat-form-field appearance="fill" [style.width.px]=327>
+    <mat-label>Search/Filter</mat-label>
+    <input matInput [(ngModel)]="searchCriteria"  (ngModelChange)="filter($event)" name="searchCriteria"/>
+  </mat-form-field>
 </div>
